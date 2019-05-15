@@ -6,7 +6,17 @@ from animevote.models import User, Poll
 
 @login_required
 def index():
-    posts = "test"
+    posts = [
+        {
+            'author': {'username': 'test1'},
+            'body': "hi I'm test1"
+        },
+        {
+            'author': {'username': 'test2'},
+            'body': "hi I'm test2"
+        },
+
+    ]
     return render_template('index.html', posts=posts)
 
 

@@ -1,9 +1,10 @@
-from flask import render_template, redirect, url_for, flash
-from flask_login import login_user, current_user, logout_user
+from flask import render_template, redirect, url_for, flash, request
+from flask_login import login_user, current_user, logout_user, login_required
 from animevote.forms import LoginForm
 from animevote.models import User, Poll
 
 
+@login_required
 def index():
     posts = "test"
     return render_template('index.html', posts=posts)
@@ -19,6 +20,10 @@ def login():
             flash('invalid username or password')
             return redirect(url_for('login'))
         login_user(u, remember=form.remember_me.data)
+        next_page = request.args.get('next')
+        if next_page:
+            return redirect(next_page)
+        return redirect(url_for('index'))
         return redirect(url_for('index'))
     return render_template('login.html', title="Sign In", form=form)
 

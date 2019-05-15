@@ -15,6 +15,8 @@ class LoginForm(FlaskForm):
 
 
 class RegisterForm(FlaskForm):
+    class Meta:
+        csrf = False     # csrf error
     username = StringField("Username", validators=[DataRequired()])
     email = StringField("Email Address", validators=[DataRequired(), Email()])
     password = PasswordField("Password", validators=[DataRequired()])

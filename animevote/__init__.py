@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager, current_user
@@ -14,9 +14,10 @@ login_manager.login_view = 'login'
 from animevote.route import index, login, logout, register, root, poll, show_results
 
 
+# 尚未修改
 class MyModelView(ModelView):
     def is_accessible(self):
-        return current_user.id == 1
+        return current_user.is_authenticated and current_user.id == 1
 
 
 def create_app():
@@ -26,7 +27,7 @@ def create_app():
     migrate.init_app(app, db)
     login_manager.init_app(app)
 
-    from animevote.models import User, Poll   # admin view initialization
+    from animevote.models import User, Poll  # admin view initialization
     admin = Admin(app, template_mode='bootstrap3')
     admin.add_view(MyModelView(User, db.session))
     admin.add_view(MyModelView(Poll, db.session))

@@ -57,3 +57,42 @@ def register():
         flash('Thanks for signing up. Please login.')
         return redirect((url_for('index')))
     return render_template('register.html', title='Registration', form=form)
+
+
+filename = 'data.txt'
+
+
+def getpoll():
+    question = Poll.query.filter_by(id=1).first().theme
+    fields = Poll.query.filter_by(id=1).first().field
+    fieldsarr = fields.split(',')
+    poll_data = {
+        'question': question,
+        'fields': fieldsarr
+    }
+    return poll_data
+
+
+def root():
+    return render_template('poll.html', data=getpoll())
+
+
+def poll():
+    vote = request.args.get('field')
+    out = open(filename, 'a')
+    out.write(vote + '\n')
+    out.close()
+    return render_template('thankyou.html', data=getpoll())
+
+
+def show_results():
+    votes = {}
+    for f in getpoll()['fields']:
+        votes[f] = 0
+    f = open(filename, 'r')
+    votesum = 0
+    for line in f:
+        vote = line.rstrip("\n")
+        votes[vote] += 1
+        votesum += 1
+    return render_template('results.html', data=getpoll(), votes=votes, votesum=votesum)

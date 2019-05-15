@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Results for</h1>
+{{ data.question }}
+
+<ul>
+
+{% for e in votes %}
+    <div class="skillbar clearfix " data-percent="{{ votes[e]/votesum*100 }}%">
+   <div class="skillbar-title" style="background: #d35400;"><span>{{ e }}</span></div>
+   <div class="skillbar-bar" style="background: #e67e22;"></div>
+   <div class="skill-bar-percent">{{ votes[e]}}</div>
+    </div>
+
+{% endfor %}
+     <li>now we have totally {{ votesum }} votes</li>
+
+</ul>
+{% endblock %}

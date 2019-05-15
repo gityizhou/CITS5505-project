@@ -19853,10 +19853,7 @@
       <change afterPath="$PROJECT_DIR$/../新建文本文档.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../金山PDF独立版.lnk" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../金山文档.lnk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/animevote/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/animevote/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/animevote/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/animevote/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/animevote/route.py" beforeDir="false" afterPath="$PROJECT_DIR$/animevote/route.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/animevote/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/animevote/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19866,11 +19863,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/animevote/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <state relative-caret-position="399">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -19878,11 +19875,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/animevote/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="437">
+              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -19998,11 +19995,11 @@
         <option value="$PROJECT_DIR$/animevote/forms.py" />
         <option value="$PROJECT_DIR$/animevote/templates/login.html" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/animevote/models.py" />
         <option value="$PROJECT_DIR$/animevote/route.py" />
         <option value="$PROJECT_DIR$/manager.py" />
         <option value="$PROJECT_DIR$/animevote/config.py" />
         <option value="$PROJECT_DIR$/animevote/__init__.py" />
+        <option value="$PROJECT_DIR$/animevote/models.py" />
       </list>
     </option>
   </component>
@@ -20118,12 +20115,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557886596212</updated>
-      <workItem from="1557886609196" duration="6704000" />
+      <workItem from="1557886609196" duration="6917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6704000" />
+    <option name="totallyTimeSpent" value="6917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -20204,13 +20201,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animevote/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/animevote/route.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -20240,11 +20230,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/animevote/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        <state relative-caret-position="399">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/animevote/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
         </state>
       </provider>
     </entry>

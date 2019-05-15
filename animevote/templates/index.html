@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>test</title>
-</head>
-<body>
-    {{ posts }}
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ posts }}</h1>
+{% endblock %}

@@ -1,4 +1,5 @@
 from flask import render_template
+from animevote.forms import LoginForm
 
 
 def index():
@@ -7,4 +8,5 @@ def index():
 
 
 def login():
-    return render_template('login.html')
+    form = LoginForm()
+    return render_template('login.html', title="Sign In", form=form)

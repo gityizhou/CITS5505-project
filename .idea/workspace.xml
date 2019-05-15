@@ -19853,9 +19853,7 @@
       <change afterPath="$PROJECT_DIR$/../新建文本文档.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../金山PDF独立版.lnk" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../金山文档.lnk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/animevote/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/animevote/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/animevote/route.py" beforeDir="false" afterPath="$PROJECT_DIR$/animevote/route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/animevote/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/animevote/templates/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19919,11 +19917,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/animevote/route.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="190">
+              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -19940,11 +19938,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/animevote/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -19980,8 +19978,8 @@
         <option value="$PROJECT_DIR$/animevote/templates/base.html" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/animevote/forms.py" />
-        <option value="$PROJECT_DIR$/animevote/route.py" />
         <option value="$PROJECT_DIR$/animevote/templates/login.html" />
+        <option value="$PROJECT_DIR$/animevote/route.py" />
       </list>
     </option>
   </component>
@@ -20092,12 +20090,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557886596212</updated>
-      <workItem from="1557886609196" duration="3188000" />
+      <workItem from="1557886609196" duration="3290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3188000" />
+    <option name="totallyTimeSpent" value="3290000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -20191,20 +20189,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animevote/route.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/animevote/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/animevote/route.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -9,7 +9,7 @@ migrate = Migrate()
 login_manager = LoginManager()
 login_manager.login_view = 'login'
 
-from animevote.route import index, login, logout
+from animevote.route import index, login, logout, register
 
 
 def create_app():

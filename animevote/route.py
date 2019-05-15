@@ -1,6 +1,6 @@
 from flask import render_template, redirect, url_for
 from animevote.forms import LoginForm
-from animevote.models import User
+from animevote.models import User, Poll
 
 
 def index():

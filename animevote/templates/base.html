@@ -11,6 +11,8 @@
 <body>
     <div>
         Animevote: <a href="{{ url_for('index') }}">Home</a>
+          <a href="{{ url_for('root') }}">Poll</a>
+          <a href="{{ url_for('results') }}">Results</a>
           {% if current_user.is_anonymous %}
           <a href="{{ url_for('login') }}">Login</a>
           {% else %}

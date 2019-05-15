@@ -73,10 +73,12 @@ def getpoll():
     return poll_data
 
 
+@login_required
 def root():
     return render_template('poll.html', data=getpoll())
 
 
+@login_required
 def poll():
     vote = request.args.get('field')
     out = open(filename, 'a')

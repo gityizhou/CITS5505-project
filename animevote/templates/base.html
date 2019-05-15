@@ -7,6 +7,15 @@
     {% else %}
     <title>welcome to animevote</title>
     {% endif %}
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+    <link rel="icon" href="https://getbootstrap.com/docs/3.3/favicon.ico">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/ie10-viewport-bug-workaround.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/signin.css') }}" rel="stylesheet">
+    <script src="../../assets/js/ie8-responsive-file-warning.js"></script>
+    <script src="{{ url_for('static', filename='js/ie-emulation-modes-warning.js') }}"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 </head>
 <body>
     <div>
@@ -22,5 +31,8 @@
 
     <hr>
     {% block content %} {% endblock %}
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/index.js"></script>
 </body>
 </html>

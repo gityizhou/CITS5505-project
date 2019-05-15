@@ -9,7 +9,7 @@ migrate = Migrate()
 login_manager = LoginManager()
 login_manager.login_view = 'login'
 
-from animevote.route import index, login, logout, register
+from animevote.route import index, login, logout, register, root, poll, show_results
 
 
 def create_app():
@@ -23,4 +23,7 @@ def create_app():
     app.add_url_rule('/login', 'login', login, methods=['GET', 'POST'])
     app.add_url_rule('/logout', 'logout', logout)
     app.add_url_rule('/register', 'register', register, methods=['GET', 'POST'])
+    app.add_url_rule('/root', 'root', root)
+    app.add_url_rule('/poll', 'poll', poll)
+    app.add_url_rule('/results', 'results', show_results)
     return app

@@ -5,7 +5,7 @@ from flask_login import LoginManager, current_user
 from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
 from flask_restful import Api
-from animevote.config import app_config
+from animevote.config import Config
 from flask_jwt import JWT
 
 db = SQLAlchemy()  # db initialization
@@ -21,6 +21,7 @@ from animevote.models import User
 class MyModelView(ModelView):
     def is_accessible(self):
         return current_user.is_authenticated and current_user.username == 'admin'
+
 
 jwt = JWT(None, User.authenticate, User.identity)
 

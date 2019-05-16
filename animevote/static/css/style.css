@@ -22,7 +22,17 @@ main{
 	bottom: 0;
 	background: rgba(255,255,255,0.3);
 	border: 1px solid rgba(121,122,119,0.55);
+    border-radius:25px;
+    -moz-border-radius:25px;
+    box-shadow: 8px 8px 4px #888888;
+}
 
+.padding{
+     padding: 10% 10% 10% 10%;
+}
+
+.padding-poll{
+    padding: 5% 5% 5% 5%;
 }
 
 footer{
@@ -33,7 +43,10 @@ footer{
     left:0;
 	text-align: center;
 	background-color: transparent;
+}
 
+div.a{
+    width: 360px;
 
 }
 
@@ -42,13 +55,42 @@ h1{
 	font-family: "Stencil Std", fantasy;
 }
 
+h5{
+    font-family: "Stencil Std", fantasy;
+}
+
 p.a{
 	font-size: 20px;
 	font-family: "Bradley Hand ITC", cursive;
 }
 
+p.b{
+    font-size: 25px;
+    font-family: "OCR A Std", monospace;
+}
+
+p.c{
+    font-size: 25px;
+    font-family: "Georgia", serif;
+}
+p.d{
+    font-size: 30px;
+    font-family: "Impact", fantasy;
+}
+
 a.a{font-size: 20px;
 	font-family: "Bradley Hand ITC", cursive;}
+
+b.a{
+    font-size: 20px;
+    font-family: "OCR A Std", monospace;
+}
+
+b.b{
+    font-size: 16px;
+    font-family: "OCR A Std", monospace;
+    vertical-align: middle;
+}
 
 .center {
 	padding: 80px 0;
@@ -59,7 +101,7 @@ a.a{font-size: 20px;
 	display:block;
 	margin-bottom:15px;
 	width:100%;
-	background:#eee;
+	background:rgba(255,251,251,0.95);
 	height:35px;
 	border-radius:3px;
 	-moz-border-radius:3px;
@@ -80,11 +122,11 @@ a.a{font-size: 20px;
 	position:absolute;
 	top:0;
 	left:0;
-width:110px;
+    width:140px;
 	font-weight:bold;
 	font-size:10px;
-	color:#ffffff;
-	background:#6adcfa;
+	color: rgba(249,255,243,0.55);
+	background: coral;
 	-webkit-border-top-left-radius:3px;
 	-webkit-border-bottom-left-radius:4px;
 	-moz-border-radius-topleft:3px;
@@ -95,7 +137,7 @@ width:110px;
 
 .skillbar-title span {
 	display:block;
-	background:rgba(0, 0, 0, 0.1);
+	background:rgba(255,255,245,0.55);
 	padding:0 20px;
 	height:35px;
 	line-height:35px;
@@ -110,7 +152,7 @@ width:110px;
 .skillbar-bar {
 	height:35px;
 	width:0px;
-	background:#6adcfa;
+	background:rgba(143,51,33,0.95);
 	border-radius:3px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
@@ -123,6 +165,6 @@ width:110px;
 	font-size:11px;
 	height:35px;
 	line-height:35px;
-	color:#ffffff;
-	color:rgba(0, 0, 0, 0.4);
+	color: rgba(143,51,33,0.95);
+	color: black;
 }

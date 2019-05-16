@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<h1>Thank you for submitting your vote for</h1>
-{{ data.question }}
+<div class="padding">
+<h1>Thank you for submitting your vote for:</h1>
+    <br>
+    <br>
+    <p class="d text-center text-danger"> {{ data.question }} </p>
+</div>
 {% endblock %}

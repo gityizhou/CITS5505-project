@@ -1,8 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Hello, {{ current_user.username }}</h1>
-    {% for post in posts %}
-    <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
-    {% endfor %}
+<div class="padding">
+        <h1 class="text-center">Hello, {{ current_user.username }}</h1>
+    <hr>
+    {%  if current_user.username %}
+        <p class="b"> <b>WELCOME</b> to our first website! This web is constructed for voting best anime every quarter. You have already signed in. <b class="text-danger">Vote NOW!</b></p>
+    {% else %}
+        <p class="b"> <b>WELCOME</b> to our first website! This web is constructed for voting best anime every quarter. It seems that you are a visitor, so you can just view our voting result only.If you want to join us to find the best anime, <b class="text-danger">Sign up NOW!</b></p>
+    {% endif %}
+</div>
 {% endblock %}

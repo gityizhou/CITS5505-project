@@ -17,8 +17,8 @@
             {{ form.remember_me()}}
             {{ form.remember_me.label }}</b>
         </p>
-        <p class="a"><b>
-            {{ form.submit() }}</b>
+        <p class="a">
+            {{ form.submit(class="btn btn-dark btn-lg") }}
         </p>
         <a class="a" href="{{ url_for('register') }}"><b>New User?</b></a>
     </form>

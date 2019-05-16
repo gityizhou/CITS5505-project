@@ -1,20 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Results for</h1>
-{{ data.question }}
-
-<ul>
-
-{% for e in votes %}
-    <div class="skillbar clearfix " data-percent="{{ votes[e]/votesum*100 }}%">
-   <div class="skillbar-title" style="background: #d35400;"><span>{{ e }}</span></div>
-   <div class="skillbar-bar" style="background: #e67e22;"></div>
-   <div class="skill-bar-percent">{{ votes[e]}}</div>
+    <div class="padding">
+        <h1>Results for</h1>
+        <p class="b"> {{ data.question }} </p>
+        <div>
+            {% for e in votes %}
+                <div class="skillbar clearfix " data-percent="{{ votes[e]/votesum*100 }}%">
+                    <div class="skillbar-title text-center" style="background: #d35400;"><b class="text-dark b">{{ e }}</b></div>
+                    <div class="skillbar-bar" style="background: #e67e22;"></div>
+                    <div class="skill-bar-percent"><b class="text-danger a">{{ votes[e]}}</b></div>
+                </div>
+            {% endfor %}
+        </div>
+        <p class="b"> Now we have totally <b class="text-danger">{{ votesum }}</b> votes. </p>
     </div>
-
-{% endfor %}
-     <li>now we have totally {{ votesum }} votes</li>
-
-</ul>
 {% endblock %}

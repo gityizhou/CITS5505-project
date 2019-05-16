@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>{{ data.question }}</h1>
-<form action="/poll">
-  {% for e in data.fields %}
-     <input type="radio" name="field" value="{{ e }}"> {{ e }}<br>
-  {% endfor %}
-  <input type="submit" value="Vote" />
-</form>
+    <div class="padding-poll">
+        <h1>{{ data.question }}</h1><br>
+        <form action="/poll" class="">
+            {% for e in data.fields %}
+                <p class="b"><input type="radio" name="field" value="{{ e }}"> {{ e }}</p><br>
+            {% endfor %}
+            <input type="submit" value="Vote" class="btn btn-dark btn-lg">
+        </form>
+    </div>
 
 {% endblock %}

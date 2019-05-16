@@ -5,7 +5,7 @@ from flask_login import LoginManager, current_user
 from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
 from flask_restful import Api
-from animevote.config import Config
+from animevote.config import app_config
 from flask_jwt import JWT
 
 db = SQLAlchemy()  # db initialization
@@ -26,9 +26,9 @@ class MyModelView(ModelView):
 jwt = JWT(None, User.authenticate, User.identity)
 
 
-def create_app():
+def create_app(config_name='development'):
     app = Flask(__name__)
-    app.config.from_object(Config)
+    app.config.from_object(app_config[config_name])
     db.init_app(app)  # db initialization
     migrate.init_app(app, db)
     login_manager.init_app(app)

@@ -1,10 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="padding">
+<div class="padding text-center">
 <h1>Thank you for submitting your vote for:</h1>
     <br>
     <br>
-    <p class="d text-center text-danger"> {{ data.question }} </p>
+    <p class="d text-danger"> {{ data.question }} </p>
+    <br>
+    <br>
+    <br>
+    <a class="btn btn-outline-danger btn-lg" href="{{ url_for('results') }}"> View results now</a>
 </div>
 {% endblock %}

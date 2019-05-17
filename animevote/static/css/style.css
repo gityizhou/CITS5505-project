@@ -81,6 +81,11 @@ p.d{
 a.a{font-size: 20px;
 	font-family: "Bradley Hand ITC", cursive;}
 
+a.b{
+	 font-size: 30px;
+     font-family: "Impact", fantasy;
+}
+
 b.a{
     font-size: 20px;
     font-family: "OCR A Std", monospace;

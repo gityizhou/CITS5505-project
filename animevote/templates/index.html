@@ -5,9 +5,9 @@
         <h1 class="text-center">Hello, {{ current_user.username }}</h1>
     <hr>
     {%  if current_user.username %}
-        <p class="b"> <b>WELCOME</b> to our first website! This web is constructed for voting best anime every quarter. You have already signed in. <b class="text-danger">Vote NOW!</b></p>
+        <p class="b"> <b>WELCOME</b> to our first website! This web is constructed for voting best anime every quarter. You have already signed in. <a class="text-danger" href="{{ url_for('root') }}">Vote NOW!</a></p>
     {% else %}
-        <p class="b"> <b>WELCOME</b> to our first website! This web is constructed for voting best anime every quarter. It seems that you are a visitor, so you can just view our voting result only.If you want to join us to find the best anime, <b class="text-danger">Sign up NOW!</b></p>
+        <p class="b"> <b>WELCOME</b> to our first website! This web is constructed for voting best anime every quarter. It seems that you are a visitor, so you can just view our voting result only.If you want to join us to find the best anime, <a class="text-danger" href="{{ url_for('login') }}">Sign in NOW!</a></p>
     {% endif %}
 </div>
 {% endblock %}

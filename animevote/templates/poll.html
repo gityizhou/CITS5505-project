@@ -3,12 +3,22 @@
 {% block content %}
     <div class="padding-poll">
         <h1>{{ data.question }}</h1><br>
-        <form action="/poll" class="">
+    </div>
+    <div class="padding-vote">
+        <form action="/poll">
             {% for e in data.fields %}
                 <p class="b"><input type="radio" name="field" value="{{ e }}"> {{ e }}</p><br>
             {% endfor %}
             <input type="submit" value="Vote" class="btn btn-dark btn-lg">
         </form>
+    </div>
+
+    <div class="padding-pic">
+        <a href="https://en.wikipedia.org/wiki/One_Piece"><img src="../static/css/OP.svg" alt="one piece" width="200"/></a><br>
+        <a href="https://en.wikipedia.org/wiki/Naruto"><img src="../static/css/N.svg" alt="naruto"width="200"/></a><br>
+        <a href="https://en.wikipedia.org/wiki/Bleach_(manga)"><img src="../static/css/B.svg" alt="bleach"width="200"/></a><br>
+        <a href="https://en.wikipedia.org/wiki/Fairy_Tail"><img src="../static/css/FT.svg" alt="fairy tail" width="200"/></a><br>
+        <a href="https://en.wikipedia.org/wiki/Fullmetal_Alchemist"><img src="../static/css/FM.svg" alt="full metal " width="200"/></a>
     </div>
 
 {% endblock %}

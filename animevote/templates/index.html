@@ -6,8 +6,10 @@
     <hr>
     {%  if current_user.username %}
         <p class="b"> <b>WELCOME</b> to our first website! This web is constructed for voting best anime every quarter. You have already signed in. <a class="text-danger" href="{{ url_for('root') }}">Vote NOW!</a></p>
+        <a href="{{ url_for('root') }}"><img  src="../static/css/welcome2.gif" alt="welcome2" width="300px" class="a"/></a>
     {% else %}
         <p class="b"> <b>WELCOME</b> to our first website! This web is constructed for voting best anime every quarter. It seems that you are a visitor, so you can just view our voting result only.If you want to join us to find the best anime, <a class="text-danger" href="{{ url_for('login') }}">Sign in NOW!</a></p>
+        <a href="{{ url_for('login') }}"><img  src="../static/css/welcome1.gif" alt="welcome1" width="300px" class="a"/></a>
     {% endif %}
 </div>
 {% endblock %}

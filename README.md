@@ -1,5 +1,12 @@
 # CITS5505-project
 Yi Zhou &amp; Zekun Shi's web project
+
+## Introduction
+
+This Web application is designed for voting best anime that are listed by authors. We use first past the post voting as the social choice mechanism. Users can register an account and then participate in voting. Also users can view results of voting in results page. If user is just a visitor, he/she can also view results but cannot take part in voting activity.
+Our web mainly includes 6 pages. You can access Home page, vote page, result page and login page via nevigation bar on the top of the website. (Attention: you cannot access vote page if you have not signed in.)  
+Home page shows the introduction of our website. You can enter login or vote page by clicking pics or corresponding words in Home page. Login page is used for signing in and if you are new to this website. You can sign up through clicking "new user" in login page. Once signing in, you can view vote page and choose the best anime you like listed in the page. You can also see the introduction of the anime on Wiki via clicking the pics. Once you finish voting, the web will jump thankyou page automatically and you can click view result button to view the vote results there. (you can also view the page through nevigation bar).
+
 ## Getting Started
 
 Activate the python virtual environment:

@@ -39,6 +39,16 @@ Install python3, sqlite3
 
 This should start the app running on localhost at port 5000, i.e. [http://localhost:5000](http://localhost:5000)
 
+
+## User api 
+
+an api for user managerment
+/user/<string:username>
+get:get userinformation
+post:sign in user
+delete:delete user
+put:update user information
+
 ## Running the unit tests for user-api
 
 python -m unittest discover

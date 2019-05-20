@@ -65,7 +65,7 @@ class User(UserMixin, db.Model):
         return user
 
 
-@login_manager.user_loader  # 用于记住用户
+@login_manager.user_loader 
 def load_user(id):
     return User.query.get(int(id))
 

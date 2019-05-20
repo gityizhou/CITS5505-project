@@ -1,5 +1,5 @@
 # CITS5505-project
-Yi Zhou &amp; Zekun Shi's web project
+Yi Zhou (22302319) &amp; Zekun Shi (22474138)'s web project
 
 ## Introduction
 

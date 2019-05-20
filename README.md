@@ -38,14 +38,23 @@ This should start the app running on localhost at port 5000, i.e. [http://localh
 
 ## Architecture
 manager.py: runserver
+
 models.py: all the db models in it
+
 unit_test:
+
  test_login.py: unittest for userlogin api
+
  test_user.py: unittest for user api
+
 forms.py: the form model of our application
+
 route.py: basic model of our application(login, logout, register etc.)
+
 user_api.py: user api model
+
 config.py: config document
+
 __init__.py: basic app route , module import etc.
 
 ## User api 

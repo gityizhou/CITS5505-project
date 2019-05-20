@@ -141,3 +141,17 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Built following the [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) by **Miguel Grinberg**.
+
+## Reference
+
+En.wikipedia.org. (2019). One Piece. [online] Available at: https://en.wikipedia.org/wiki/One_Piece [Accessed 20 May 2019].
+
+En.wikipedia.org. (2019). Naruto. [online] Available at: https://en.wikipedia.org/wiki/Naruto [Accessed 20 May 2019].
+
+En.wikipedia.org. (2019). Bleach. [online] Available at: https://en.wikipedia.org/wiki/Bleach [Accessed 20 May 2019].
+
+En.wikipedia.org. (2019). Fairytail. [online] Available at: https://en.wikipedia.org/wiki/Fairytail [Accessed 20 May 2019].
+
+En.wikipedia.org. (2019). Fullmetal. [online] Available at: https://en.wikipedia.org/wiki/Fullmetal [Accessed 20 May 2019].
+
+Download Awesome collection of handpicked wallpapers and images. (2019). one piece 1080p windows 1440x900. [online] Available at: https://www.tokkoro.com/1507503-one-piece.html [Accessed 20 May 2019].

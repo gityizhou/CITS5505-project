@@ -105,14 +105,23 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 version 0.1
+
 version 0.2
+
 version 0.3
+
 version 0.4
+
 version 0.5
+
 version 0.6
+
 version 0.7
+
 version 0.8
+
 version Api-test (for api test only)
+
 ## Authors
 
 * **Yi Zhou** - *Initial work* - [drtnf](https://github.com/gityizhou)
